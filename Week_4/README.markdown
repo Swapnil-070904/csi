@@ -60,10 +60,10 @@ This document outlines key Azure Virtual Network (VNet) concepts, including VNet
    - VM Name: `vnet1-VM`
    - Region: `Central India`
    - Image: Ubuntu Server 20.04 LTS
-   - Size: Standard_D2s_v3
+   - Size: Standard B1s
    - Authentication: SSH public key (generate or provide key)
    - Public inbound ports: Allow SSH (port 22)
-7. Under **Networking**:
+3. Under **Networking**:
    - Virtual Network: `VNet-1`
    - Subnet: `Subnet1 (10.0.1.0/24)`
    - Public IP: Create new
@@ -88,7 +88,7 @@ This document outlines key Azure Virtual Network (VNet) concepts, including VNet
    - VM Name: `vnet2-VM`
    - Region: `Central India`
    - Image: Ubuntu Server 20.04 LTS
-   - Size: Standard_D2s_v3
+   - Size: Standard B1s
    - Authentication: SSH public key (generate or provide key)
    - Public inbound ports: Allow SSH (port 22)
 3. Under **Networking**:
@@ -112,10 +112,10 @@ This document outlines key Azure Virtual Network (VNet) concepts, including VNet
 ### Step 6: Validate Connectivity
 1. **Connect to LinuxVM1**:
    - Use SSH to connect via its public IP (e.g., `ssh azureuser@<LinuxVM1-public-IP>`).
-   - Run `ping <LinuxVM2-private-IP>` (e.g., `ping 10.1.1.4`).
+   - Run `ping <LinuxVM2-private-IP>`.
 2. **Connect to LinuxVM2**:
    - Use SSH to connect via its public IP (e.g., `ssh azureuser@<LinuxVM2-public-IP>`).
-   - Run `ping <LinuxVM1-private-IP>` (e.g., `ping 10.0.1.4`).
+   - Run `ping <LinuxVM1-private-IP>`.
 3. Confirm successful ping responses in both directions.
 ![notping](img/notping.png)
 
