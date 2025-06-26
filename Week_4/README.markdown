@@ -111,10 +111,10 @@ This document outlines key Azure Virtual Network (VNet) concepts, including VNet
 
 ### Step 6: Validate Connectivity
 1. **Connect to LinuxVM1**:
-   - Use SSH to connect via its public IP (e.g., `ssh azureuser@<LinuxVM1-public-IP>`).
+   - Use SSH to connect via its public IP (e.g., `ssh -i publickey azureuser@<LinuxVM1-public-IP>`).
    - Run `ping <LinuxVM2-private-IP>`.
 2. **Connect to LinuxVM2**:
-   - Use SSH to connect via its public IP (e.g., `ssh azureuser@<LinuxVM2-public-IP>`).
+   - Use SSH to connect via its public IP (e.g., `ssh -i publickey azureuser@<LinuxVM2-public-IP>`).
    - Run `ping <LinuxVM1-private-IP>`.
 3. Confirm successful ping responses in both directions.
 ![notping](img/notping.png)
@@ -129,7 +129,7 @@ This document outlines key Azure Virtual Network (VNet) concepts, including VNet
    - Enable **Allow virtual network access**.
    - Enable **Allow forwarded traffic** if needed.
 3. Click **Add**.<br>
-**It creates a two way connection**
+***It creates a two way connection***
 ![peering](img/peering.png)
 4. Repeat step 6 and check connectivity again.
 ![ping](img/ping.png)
