@@ -79,8 +79,8 @@ create three subnets : 1. Web tier 2. App tier 3. DB tier DB Tier should not acc
 
    **DBTier NSG**:
    - **Inbound Rules**:
-     - Name: `AllowAppTier`, Protocol: TCP, Source: `10.0.2.0/24`, Destination: Any, Destination Port: Any, Action: Allow, Priority: 100.
-     - Name: `AllowWebTier`, Protocol: TCP, Source: `10.0.1.0/24`, Destination: Any, Destination Port: Any, Action: Allow, Priority: 100.
+     - Name: `AllowAppTier`, Protocol: TCP, Source: `10.0.2.0/24`, Destination: Any, Destination Port: Any, Action: Allow, Priority: 110.
+     - Name: `AllowWebTier`, Protocol: TCP, Source: `10.0.1.0/24`, Destination: Any, Destination Port: Any, Action: Allow, Priority: 120.
    - **Outbound Rules**:
      - Name: `DenyAllOutbound`, Protocol: Any, Source: Any, Destination: Any, Destination Port: Any, Action: Deny, Priority: 100.
 
