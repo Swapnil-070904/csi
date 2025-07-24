@@ -29,7 +29,7 @@ This document explains how to configure a **Point-to-Site connection** on Azure.
    - **SKU**: `VpnGw1`.
    - **Virtual Network**: Select the VNet created in step 1.
    - **Public IP Address**: Create a new public IP.
-4. Wait for the gateway to deploy (may take 30–45 minutes).
+4. Wait for the gateway to deploy.
 
 ![-](img1/gateway.png)
 
